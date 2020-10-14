@@ -1,0 +1,66 @@
+{
+  "name": "gitee-client",
+  "version": "0.1.0",
+  "description": "Gitee API wrapper.",
+  "author": "ZHAO Xudong <zxdong@gmail.com>",
+  "license": "MIT",
+  "main": "dist/gitee.js",
+  "module": "src/gitee.js",
+  "scripts": {
+    "test": "./node_modules/.bin/standard && jest",
+    "lint": "./node_modules/.bin/standard",
+    "release": "webpack --progress --config webpack.config.babel.js",
+    "prepublishOnly": "npm run release"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.2",
+    "babel-loader": "^8.1.0",
+    "dotenv-override-true": "^6.2.2",
+    "jest": "^26.5.3",
+    "standard": "^14.3.4",
+    "webpack": "^5.1.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": [
+      "./test"
+    ],
+    "setupFiles": [
+      "dotenv-override-true/config"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "*-compiled.js",
+      "/dist/"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electerm/gitee-js.git"
+  },
+  "keywords": [
+    "gist",
+    "github",
+    "wrapper",
+    "js",
+    "sdk"
+  ],
+  "bugs": {
+    "url": "https://github.com/electerm/gitee-js/issues"
+  },
+  "homepage": "https://github.com/electerm/gitee-js#readme"
+}
