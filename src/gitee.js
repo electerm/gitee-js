@@ -50,6 +50,9 @@ class GistClient {
       const tokenQuery = `access_token=${this.token}`
       uri = uri + sep + tokenQuery
     } else {
+      if (!config.data) {
+        config.data = {}
+      }
       config.data.access_token = this.token
     }
     return this._axios.request({
