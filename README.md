@@ -1,6 +1,6 @@
 # Gitee API wrapper for JavaScript
 
-[![Build Status](https://travis-ci.org/electerm/gitee-js.svg?branch=release)](https://travis-ci.org/electerm/gitee-js)
+[![Build Status](https://travis-ci.com/electerm/gitee-js.svg?branch=release)](https://travis-ci.com/electerm/gitee-js)
 
 Gitee gist API wrapper. [api docs](https://gitee.com/api/v5/swagger#/postV5Gists).
 

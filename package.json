@@ -1,6 +1,6 @@
 {
   "name": "gitee-client",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Gitee API wrapper.",
   "author": "ZHAO Xudong <zxdong@gmail.com>",
   "license": "MIT",
@@ -12,22 +12,23 @@
     "release": "webpack --progress --config webpack.config.babel.js",
     "prepublishOnly": "npm run release"
   },
-  "dependencies": {
-    "axios": "^0.20.0"
+  "peerDependencies": {
+    "axios": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.11.5",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.5.2",
-    "babel-loader": "^8.1.0",
-    "dotenv-override-true": "^6.2.2",
-    "jest": "^26.5.3",
-    "standard": "^14.3.4",
-    "webpack": "^5.1.0",
-    "webpack-cli": "^4.0.0"
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/register": "7.12.10",
+    "axios": "*",
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.6.3",
+    "babel-loader": "8.2.2",
+    "dotenv-override-true": "6.2.2",
+    "jest": "26.6.3",
+    "standard": "16.0.3",
+    "webpack": "5.11.1",
+    "webpack-cli": "4.3.1"
   },
   "jest": {
     "testEnvironment": "node",
