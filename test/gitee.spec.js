@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import Gitee from '../src/gitee.js'
+import Gitee from '../src/gitee.ts'
 
 const pack = require('../package.json')
 jest.setTimeout(64000)

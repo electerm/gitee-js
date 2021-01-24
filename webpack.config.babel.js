@@ -4,12 +4,15 @@ const pack = require('./package.json')
 const defaultConfig = {
   mode: 'production',
   devtool: 'source-map',
-  entry: './src/gitee.js',
+  entry: './src/gitee.ts',
   output: {
     filename: 'gitee.js',
     library: 'Gitee',
     libraryTarget: 'umd',
     globalObject: 'this' // fix window undefined issue in node
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   externals: {
     axios: {
@@ -18,6 +21,14 @@ const defaultConfig = {
       amd: 'axios',
       root: 'axios'
     }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
+      }
+    ]
   },
   plugins: [
     new webpack.DefinePlugin({
